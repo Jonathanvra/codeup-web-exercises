@@ -183,20 +183,22 @@ alert("Your lucky number is " + luckyNumber + ". Your original total is " + user
  * HINT: The way we prompt for a value could be improved
  */
 let number = confirm("Would you like to enter a number?");
-console.log(number);
-if (number === true) {
-    let chooseNum = prompt("What is your number?");
-
-    if (chooseNum % 2 == 0) {
-        alert("Your number is even!");
-    } else {
-        (alert("Your number is odd!"));
+let chooseNum = prompt("What is your number?");
+if(!isNaN(chooseNum)) {
+    if (number === true) {
+        if (chooseNum % 2 === 0) {
+            alert("Your number is even!");
+        } else {
+            (alert("Your number is odd!"));
+        }
+        let adding = parseInt(chooseNum) + 100;
+        alert(adding + " is your number plus 100.");
+        if (chooseNum > 0) {
+            alert("Your number is positive!");
+        } else {
+            alert("Your number is negative!");
+        }
     }
-    let adding = parseInt(chooseNum) + 100;
-    alert(adding + " is your number plus 100.");
-    if (chooseNum > 0) {
-        alert("Your number is positive!");
-    } else {
-        alert("Your number is negative!");
-    }
+}else {
+    alert("You didn't enter a number. Refresh and try again with a number.")
 }
