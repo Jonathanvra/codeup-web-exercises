@@ -18,9 +18,8 @@ function sayHello(name) {
  *
  * console.log 'helloMessage' to check your work
  */
-let name = prompt("What's your name?")
-console.log(sayHello(name))
-let helloMessage = sayHello(name);
+
+let helloMessage = sayHello("Mike");
 console.log(helloMessage);
 
 /**
@@ -30,7 +29,7 @@ console.log(helloMessage);
  * console.
  */
 let myName = "Jonathan"
-console.log(myName);
+console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -106,3 +105,5 @@ function applyDiscount(originalAmount, discountPercentage ) {
     let discountPercentage = .25;
     alert ("Your new total after discount is $" + (originalAmount * discountPercentage));
 
+ // console.log(applyDiscount(100, .2));
+ // console.log(applyDiscount(45.99, .12));
