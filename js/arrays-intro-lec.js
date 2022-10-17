@@ -11,7 +11,7 @@
 
     console.log(instructors[0]);
     instructors[0] = "'Lord Megatron' David";
-    console.log(instructors[0]);
+    console.log(instructors[1]);
     instructors[1] = "'Emperor Starscream' Cody";
     console.log(falsyValues[falsyValues.length - 1]);
 
