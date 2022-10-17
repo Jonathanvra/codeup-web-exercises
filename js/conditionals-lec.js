@@ -20,7 +20,7 @@ console.log(isItANumber("Banana"));
 // function isItANumber(parameter) {
 //     if ( typeof parameter === "number"){ // isNaN(parseFloat(parameter)) && typeof parameter !== "string" is an alt condition that would work.
 //
-//     }
+//
 // }
 //
 // let hasCrunchwrap = true;

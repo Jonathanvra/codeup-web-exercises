@@ -27,84 +27,84 @@
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-let randomColor = colors[Math.floor(Math.random() * colors.length)];
-function analyzeColor(name) {
-    if (name === 'red') {
-    return "Lady bugs are mostly red.";
-}
-    else if (name === 'orange') {
-        return "Grape fruits are orange.";
-    }
-    else if (name === 'yellow'){
-        return "Sunflowers are yellow.";
-    }
-    else if (name === 'indigo'){
-        return "Jeans are indigo.";
-    }
-    else if (name === 'blue') {
-        return "The ocean water is blue.";
-    }
-    else if (name === 'green') {
-        return "The grass is green.";
-    }
-    else if (name === 'violet') {
-        return "Some grapes are violet."
-    }
-    else {
-        return "I don't know anything about " + name + "."
-    }
-}
+// let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// let randomColor = colors[Math.floor(Math.random() * colors.length)];
+// function analyzeColor(name) {
+//     if (name === 'red') {
+//     return "Lady bugs are mostly red.";
+// }
+//     else if (name === 'orange') {
+//         return "Grape fruits are orange.";
+//     }
+//     else if (name === 'yellow'){
+//         return "Sunflowers are yellow.";
+//     }
+//     else if (name === 'indigo'){
+//         return "Jeans are indigo.";
+//     }
+//     else if (name === 'blue') {
+//         return "The ocean water is blue.";
+//     }
+//     else if (name === 'green') {
+//         return "The grass is green.";
+//     }
+//     else if (name === 'violet') {
+//         return "Some grapes are violet."
+//     }
+//     else {
+//         return "I don't know anything about " + name + "."
+//     }
+// }
 
-console.log(analyzeColor('red'));
-console.log(analyzeColor('orange'));
-console.log(analyzeColor('yellow'));
-console.log(analyzeColor('green'));
-console.log(analyzeColor('blue'));
-console.log(analyzeColor('indigo'));
-console.log(analyzeColor('violet'));
+// console.log(analyzeColor('red'));
+// console.log(analyzeColor('orange'));
+// console.log(analyzeColor('yellow'));
+// console.log(analyzeColor('green'));
+// console.log(analyzeColor('blue'));
+// console.log(analyzeColor('indigo'));
+// console.log(analyzeColor('violet'));
 
 /**
  * TODO: 2
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-console.log(analyzeColor(randomColor));
+// console.log(analyzeColor(randomColor));
 /**
  * TODO: 3
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-function analyzeColor(name) {
-
-
-    switch (name) {
-        case 'red':
-            return "Lady bugs are mostly red.";
-        case 'orange':
-            return "Grape fruits are orange.";
-        case 'yellow':
-            return "Sunflowers are yellow.";
-        case 'indigo':
-            return "Jeans are indigo.";
-        case 'blue':
-            return "The ocean water is blue.";
-        case 'green':
-            return "The grass is green.";
-        case 'violet':
-            return "Some grapes are violet.";
-        default:
-            return "I don't know anything about " + name + ".";
-    }
-}
+// function analyzeColor(name) {
+//
+//
+//     switch (name) {
+//         case 'red':
+//             return "Lady bugs are mostly red.";
+//         case 'orange':
+//             return "Grape fruits are orange.";
+//         case 'yellow':
+//             return "Sunflowers are yellow.";
+//         case 'indigo':
+//             return "Jeans are indigo.";
+//         case 'blue':
+//             return "The ocean water is blue.";
+//         case 'green':
+//             return "The grass is green.";
+//         case 'violet':
+//             return "Some grapes are violet.";
+//         default:
+//             return "I don't know anything about " + name + ".";
+//     }
+// }
 /**
  * TODO: 4
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-let userInput = prompt("Enter a color.")
-
-alert(analyzeColor(userInput));
+// let userInput = prompt("Enter a color.")
+//
+// alert(analyzeColor(userInput));
 /* ########################################################################## */
 
 /**
@@ -127,29 +127,29 @@ alert(analyzeColor(userInput));
  * it various values and checking for the expected
  * return value.
  */
-function calculateTotal(luckyNumber, ogTotal){
-    let calculatedTotal;
-    if(luckyNumber === 0){
-        calculatedTotal = ogTotal;
-    } else if(luckyNumber === 1){
-        calculatedTotal = ogTotal - (ogTotal * .1);
-    } else if(luckyNumber === 2){
-        calculatedTotal = ogTotal - (ogTotal * .25);
-    } else if(luckyNumber === 3){
-        calculatedTotal = ogTotal - (ogTotal * .35);
-    } else if(luckyNumber === 4){
-        calculatedTotal = ogTotal - (ogTotal * .5);
-    } else if(luckyNumber === 5){
-        calculatedTotal = ogTotal * 0;
-    }
-    return calculatedTotal;
-}
-console.log(calculateTotal(0, 100));
-console.log(calculateTotal(1, 100));
-console.log(calculateTotal(2, 100));
-console.log(calculateTotal(3, 100));
-console.log(calculateTotal(4, 100));
-console.log(calculateTotal(5, 100));
+// function calculateTotal(luckyNumber, ogTotal){
+//     let calculatedTotal;
+//     if(luckyNumber === 0){
+//         calculatedTotal = ogTotal;
+//     } else if(luckyNumber === 1){
+//         calculatedTotal = ogTotal - (ogTotal * .1);
+//     } else if(luckyNumber === 2){
+//         calculatedTotal = ogTotal - (ogTotal * .25);
+//     } else if(luckyNumber === 3){
+//         calculatedTotal = ogTotal - (ogTotal * .35);
+//     } else if(luckyNumber === 4){
+//         calculatedTotal = ogTotal - (ogTotal * .5);
+//     } else if(luckyNumber === 5){
+//         calculatedTotal = ogTotal * 0;
+//     }
+//     return calculatedTotal;
+// }
+// console.log(calculateTotal(0, 100));
+// console.log(calculateTotal(1, 100));
+// console.log(calculateTotal(2, 100));
+// console.log(calculateTotal(3, 100));
+// console.log(calculateTotal(4, 100));
+// console.log(calculateTotal(5, 100));
 /**
  * TODO: 6
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -159,10 +159,10 @@ console.log(calculateTotal(5, 100));
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-let luckyNumber = Math.floor(Math.random() * 6);
-let userInput2 = prompt("What was your total?");
-
-alert("Your lucky number is " + luckyNumber + ". Your original total is " + userInput2 + ". Your price with your discount is now " + calculateTotal(luckyNumber, userInput2) + ".");
+// let luckyNumber = Math.floor(Math.random() * 6);
+// let userInput2 = prompt("What was your total?");
+//
+// alert("Your lucky number is " + luckyNumber + ". Your original total is " + userInput2 + ". Your price with your discount is now " + calculateTotal(luckyNumber, userInput2) + ".");
 
 /**
  * TODO: 7
@@ -182,6 +182,26 @@ alert("Your lucky number is " + luckyNumber + ". Your original total is " + user
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+// let number = confirm("Would you like to enter a number?");
+// let chooseNum = prompt("What is your number?");
+// if(!isNaN(chooseNum)) {
+//     if (number === true) {
+//         if (chooseNum % 2 === 0) {
+//             alert("Your number is even!");
+//         } else {
+//             (alert("Your number is odd!"));
+//         }
+//         let adding = parseInt(chooseNum) + 100;
+//         alert(adding + " is your number plus 100.");
+//         if (chooseNum > 0) {
+//             alert("Your number is positive!");
+//         } else {
+//             alert("Your number is negative!");
+//         }
+//     }
+// }else {
+//     alert("You didn't enter a number. Refresh and try again with a number.")
+// }
 let number = confirm("Would you like to enter a number?");
 let chooseNum = prompt("What is your number?");
 if(!isNaN(chooseNum)) {
@@ -201,4 +221,11 @@ if(!isNaN(chooseNum)) {
     }
 }else {
     alert("You didn't enter a number. Refresh and try again with a number.")
+}
+function confirm(number) {
+    prompt("Would you like to enter a number?")
+    if (!isNaN(chooseNum)) {
+    } else {
+        return chooseNum + " is not a number. Refresh and try inputting a number."
+    }
 }
