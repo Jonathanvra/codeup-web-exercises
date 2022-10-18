@@ -2,7 +2,7 @@
     "use strict";
 
     let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    let planetsArray;
+    let planetsArray ;
 
     /**
      * TODO:
@@ -11,7 +11,8 @@
      * console.log planetsArray to check your work
      */
 
-    // console.log(planetsArray);
+    planetsArray = planetsString.split("|");
+    console.log(planetsArray);
 
     /**
      * TODO:
@@ -24,4 +25,7 @@
      * string, and <li> tags around each planet.
      */
 
+    let newList = planetsArray.join("<br>");
+
+    console.log(newList)
 })();
