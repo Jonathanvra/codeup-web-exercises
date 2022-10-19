@@ -5,11 +5,11 @@ let car = new Object();
 console.log(typeof car);
 // "object"
 
-let car = {};
+// let car = {};
 // Most do not declare objects this way no longer
 console.log(typeof car);
 
-let car = {};
+// let car = {};
 
 // use dot notation to assign a "make" property
 car.make = "Toyota";
@@ -81,7 +81,7 @@ cars.forEach(function(car) {
 });
 
 
-let car = {};
+// let car = {};
 car.make = "Toyota";
 car.model = "Camry";
 
@@ -91,8 +91,8 @@ car.honk = function () {
     car.logMakeModel = function () {
         console.log("Car make/model is: " + this.make + " " + this.model);
 
-};
+    };
 
 // honk the horn
-car.honk();
-
+    car.honk();
+}
