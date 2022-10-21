@@ -1,8 +1,90 @@
-.fancy-header {
-    color: purple;
-    text-decoration: underline;
+/*.fancy-header {*/
+/*    color: red;*/
+/*    text-decoration: underline;*/
+/*}*/
+/*.extra-large {*/
+/*    font-size: 100px;*/
+/*}*/
+.fancy-text2 {
+    color: black;
+    /*text-size: 50px;*/
+    /*transition-property: font-size;*/
+    /*font-size: 30px;*/
 }
-.fancy-text {
-    color: green;
-    text-decoration: underline overline #FF3028;;
+/*.fancy-text {*/
+/*    color: black;*/
+/*    !*text-decoration: underline overline #FF3028;*!*/
+/*    text-decoration-line: line-through;*/
+/*    text-decoration-thickness: .01rem;*/
+}
+/*p{*/
+/*    color: orange;*/
+/*}*/
+/*.container>h1 {*/
+/*    color: blue;*/
+/*}*/
+/* unvisited link (:link) */
+/*a:link {*/
+/*    color:darkslateblue;*/
+/*}*/
+
+/* visited link (:visited) */
+/*a:visited {*/
+/*    color:lightseagreen;*/
+/*}*/
+
+/* mouse hover over link (:hover) */
+/*a:hover {*/
+/*    color:white;*/
+/*}*/
+
+/* active/selected link (:active) */
+/*a:active {*/
+/*    color:black;*/
+/*}*/
+/*#FF0000 = red*/
+/*#00FF00 = green*/
+/*#0000FF = blue*/
+/*#000000 = black*/
+/*#FFFFFF = white*/
+/*#808080 = grey*/
+
+.delay {
+    font-size: 65px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 1s;
+}
+
+.delay:hover {
+    font-size: 15px;
+}
+.box {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black
+    display: block;
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    transform: rotate(360deg);
+    font-size: 25px;
+}
+
+a {
+    background-color: white;
+}
+
+a:hover {
+    background-color: deepskyblue;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
