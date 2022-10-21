@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form</title>
+</head>
+<body>
+<form method="POST" action="https://request-inspector.glitch.me/">
+
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text">
+    <br>
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password">
+    <br>
+
+    <input type="submit">
+
+    <select name="coffee_preference">
+        <option value="light">Light Roast</option>
+        <option value="dark">Dark Roast</option>
+        <option value="espresso">Espresso Blend</option>
+    </select>
+
+<input type="hidden" name="user_id" value="432">
+
+    <input type="text" name="username" value="codeup" disabled>
+
+    <select name="newsletter_signup">
+        <option disabled value="n">No</option>
+        <option selected value="y">Yes</option>
+    </select>
+
+    <h2>What kind of phone do you own?</h2>
+    <label for="android">
+        Android <input id="android" type="checkbox" name="phones" value="android">
+    </label>
+    <label for="ios">
+        iOS <input id="ios" type="checkbox" name="phones" value="ios">
+    </label>
+    <label for="windows">
+        Windows <input id="windows" type="checkbox" name="phones" value="windows">
+    </label>
+    <label for="other">
+        Other <input id="other" type="checkbox" name="phones" value="other">
+    </label>
+
+</form>
+</body>
+</html>
