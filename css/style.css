@@ -1,90 +1,74 @@
-/*.fancy-header {*/
-/*    color: red;*/
-/*    text-decoration: underline;*/
-/*}*/
-/*.extra-large {*/
-/*    font-size: 100px;*/
-/*}*/
-.fancy-text2 {
-    color: black;
-    /*text-size: 50px;*/
-    /*transition-property: font-size;*/
-    /*font-size: 30px;*/
-}
-/*.fancy-text {*/
+/*.fancy-text2 {*/
 /*    color: black;*/
-/*    !*text-decoration: underline overline #FF3028;*!*/
-/*    text-decoration-line: line-through;*/
-/*    text-decoration-thickness: .01rem;*/
-}
-/*p{*/
-/*    color: orange;*/
+/*    !*text-size: 50px;*!*/
+/*    !*transition-property: font-size;*!*/
+/*    font-size: 30px;*/
 /*}*/
-/*.container>h1 {*/
-/*    color: blue;*/
-/*}*/
-/* unvisited link (:link) */
-/*a:link {*/
-/*    color:darkslateblue;*/
+/*.delay {*/
+/*    font-size: 60px;*/
+/*    transition-property: font-size;*/
+/*    transition-duration: 4s;*/
+/*    transition-delay: 0.5s;*/
 /*}*/
 
-/* visited link (:visited) */
-/*a:visited {*/
-/*    color:lightseagreen;*/
+/*.delay:hover {*/
+/*    font-size: 15px;*/
+/*}*/
+/*.box {*/
+/*    border-style: solid;*/
+/*    border-width: 1px;*/
+/*    border-color: black;*/
+/*    display: block;*/
+/*    width: 300px;*/
+/*    height: 150px;*/
+/*    background-color: black;*/
+/*    transition: width 2s, height 2s, background-color 2s, transform 2s;*/
 /*}*/
 
-/* mouse hover over link (:hover) */
-/*a:hover {*/
-/*    color:white;*/
+/*.box:hover {*/
+/*    background-color: white;*/
+/*    width: 400px;*/
+/*    height: 250px;*/
+/*    transform: rotate(360deg);*/
+/*    font-size: 25px;*/
 /*}*/
 
-/* active/selected link (:active) */
-/*a:active {*/
-/*    color:black;*/
+/*
+How can CSS transform rotate or change the size of a displayed element?
+
+To rotate and scale in CSS you use the following TRANSFORM properties:
+
+ROTATE(##DEG) property rotates something CW however many degrees/turns/radians
+you specify.
+ -Negative numbers rotate CCW.
+ -For example to rotate CCW a quarter turn, you can use either: scale(-90deg)
+  or scale(-0.25turn) or scale(-1.57rad).
+SCALE(X,Y) is in 2D in x and y directions.
+ -If you only need one axis, you can say scaleX(2) or scaleY(0.5).
+ -Use less than 1  to shrink and more than 1 to enlarge.
+ -You use negative numbers to flip the image around on the specified axis like:
+  scale(-0.5, 1) will flip the image on the x-axis and shrink it to half its
+  original size, then the y value just keeps the original size.
+
+ ********BEWARE*********
+ If you rotate an image THEN try to move it over, it will maintain its x and
+ y axis onto the new plane you rotated in. So it will probably end up somewhere
+ you didn't want to. So do you placement first, then rotate.
+*/
+
+
+/*div {*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    background-color: green;*/
 /*}*/
-/*#FF0000 = red*/
-/*#00FF00 = green*/
-/*#0000FF = blue*/
-/*#000000 = black*/
-/*#FFFFFF = white*/
-/*#808080 = grey*/
 
-.delay {
-    font-size: 65px;
-    transition-property: font-size;
-    transition-duration: 4s;
-    transition-delay: 1s;
-}
+/*.rotateExample {*/
+/*    transform: rotate(45deg);*/
+/*    background-color: greenyellow;*/
+/*}*/
+/*.scaleExample{*/
+/*    transform: scale(0.5,0.5);*/
+/*    background-color: greenyellow;*/
+/*}*/
 
-.delay:hover {
-    font-size: 15px;
-}
-.box {
-    border-style: solid;
-    border-width: 1px;
-    border-color: black
-    display: block;
-    width: 300px;
-    height: 150px;
-    background-color: black;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-.box:hover {
-    background-color: white;
-    width: 400px;
-    height: 250px;
-    transform: rotate(360deg);
-    font-size: 25px;
-}
-
-a {
-    background-color: white;
-}
-
-a:hover {
-    background-color: deepskyblue;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
-}
