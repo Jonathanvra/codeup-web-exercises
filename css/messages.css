@@ -1,0 +1,31 @@
+:root {
+    --main-bg-info: #ccdeff;
+    --main-text-info: #4a45a1;
+    --bg-success: #cff3da;
+    --text-success: #
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.message{
+    border: 1px solid;
+}
+
+.message-info{
+
+}
+.message-success {
+
+}
+
+.message-warning {
+
+}
+.message-error {
+
+}
