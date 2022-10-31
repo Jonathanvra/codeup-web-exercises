@@ -23,8 +23,6 @@ h2, h3 {
     background: green;
     height: 1em;
     width: 2em;
-    /*flex-direction: row;*/
-    /*justify-content: ;*/
 }
 
 .border {border: 2px solid black;}
@@ -37,7 +35,6 @@ h2, h3 {
     margin: 0 auto;
     /* enter needed declarations here */
     flex-wrap: wrap;
-
 }
 section {
     /* enter needed declarations here */
@@ -129,6 +126,9 @@ section:nth-of-type(6) {
     background: coral;
     height: 14em;
     /* enter needed declarations here */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .grey-box {
