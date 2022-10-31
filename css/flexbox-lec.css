@@ -1,11 +1,13 @@
 .flex-container {
     background: rebeccapurple;
     width: 80vw;
+    height: 250px;
     margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .flex-item {
@@ -14,4 +16,12 @@
     width: 200px;
     border: 2px solid firebrick;
     color: firebrick;
+}
+
+#special-box {
+    background: forestgreen;
+    height: 150px;
+    width: 200px;
+    border: 2px solid blanchedalmond;
+    color: blanchedalmond;
 }

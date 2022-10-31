@@ -108,3 +108,27 @@ function getTallestHamster(arr) {
 	return tallest
 }
 console.log(getTallestHamster(hamsters));
+
+//Todo 4 Oct. 31
+
+//Warmup: Write FizzBuzz from 1-100;
+// Numbers evenly divisible by 3 should be replaced by Fizz
+// Numbers evenly divisible by 5 should be replaced by Buzz
+// Numbers evenly divisible by both 3 and 5 should be replaced by FizzBuzz
+// All other numbers should be printed in the console.
+
+for (let i = 1; i <= 100; i++){
+	if (i % 3 === 0 && i % 5 === 0) {
+		console.log("FizzBuzz");
+	} else if (i % 3 === 0){
+		console.log("Fizz");
+	} else if ( i % 5 === 0) {
+		console.log("Buzz");
+	} else{
+	console.log(i);
+	}
+}
+
+//Walk
+
+
