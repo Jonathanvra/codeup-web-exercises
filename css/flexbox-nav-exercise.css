@@ -1,0 +1,21 @@
+header nav {
+    display: flex;
+    flex-direction: row;
+    /*margin: auto;*/
+}
+header nav>ul {
+    display: flex;
+    background: gray;
+    color: black;
+    height: 2em;
+    align-items: flex-start;
+    /*margin: auto;*/
+    padding: 1em;
+    flex-direction: row;
+
+}
+header nav>ul>li {
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+}

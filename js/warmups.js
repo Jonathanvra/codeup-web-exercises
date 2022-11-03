@@ -4,44 +4,44 @@
 
 // TODO 1, OCT. 20
 
-function getPrice(obj) {
-	return obj.price;
-}
-let avocados = {
-		name: "avocados",
-		quantity: "3",
-		price: "$4.59"
-	};
-console.log(getPrice(avocados));
+// function getPrice(obj) {
+// 	return obj.price;
+// }
+// let avocados = {
+// 		name: "avocados",
+// 		quantity: "3",
+// 		price: "$4.59"
+// 	};
+// console.log(getPrice(avocados));
 
 // TODO 2, OCT 21
 
-function longestString(arr){
-	let bee = ["pollen", "wax", "honey"];
-	let lgth = Math.max;
-	let longestStr = "";
-	for (let i = 0; i < arr.length; i++) {
-		if (arr[i].length > lgth) {
-			let lgth = arr[i].length;
-			longest = arr[i];
-		}
-	}
-	console.log(longest);
-}
+// function longestString(arr){
+// 	let bee = ["pollen", "wax", "honey"];
+// 	let lgth = Math.max;
+// 	let longestStr = "";
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i].length > lgth) {
+// 			let lgth = arr[i].length;
+// 			longest = arr[i];
+// 		}
+// 	}
+// 	console.log(longest);
+// }
 
 // Walkthrough
-function getLongestStr(arr) {
-	let longestStr = "";
-	for (let str of arr) {
-		if (str.length > longestStr.length) {
-			longestStr = str;
-		}
-	}
-	return longestStr;
-}
-const bee = ["wax", "pollen", "honey"];
-
-console.log(getLongestStr(bee))
+// function getLongestStr(arr) {
+// 	let longestStr = "";
+// 	for (let str of arr) {
+// 		if (str.length > longestStr.length) {
+// 			longestStr = str;
+// 		}
+// 	}
+// 	return longestStr;
+// }
+// const bee = ["wax", "pollen", "honey"];
+//
+// console.log(getLongestStr(bee))
 
 // Todo 3, Oct. 26
 
@@ -49,39 +49,39 @@ console.log(getLongestStr(bee))
 // getTallestHamster(hamsters); // should return {name: "Boss", heightInMM: 120, fur: ['brown', 'white'], gender: "male", dateOfBirth: "September 21"};
 
 
-	const hamsters = [
-		{
-			name: "Hamtaro",
-			heightInMM: 86,
-			fur: ['orange', 'white'],
-			gender: "male",
-			dateOfBirth: "August 6"
-		}, {
-			name: "Bijou",
-			heightInMM: 75,
-			fur: ['white'],
-			gender: "female",
-			dateOfBirth: "July 10"
-		}, {
-			name: "Oxnard",
-			heightInMM: 100,
-			fur: ['grey', 'white'],
-			gender: "male",
-			dateOfBirth: "May 3"
-		}, {
-			name: "Boss",
-			heightInMM: 120,
-			fur: ['brown', 'white'],
-			gender: "male",
-			dateOfBirth: "September 21"
-		}, {
-			name: "Snoozer",
-			heightInMM: 85,
-			fur: ['brown', 'white', "pink"],
-			gender: "male",
-			dateOfBirth: "January 14"
-		}
-	];
+	// const hamsters = [
+	// 	{
+	// 		name: "Hamtaro",
+	// 		heightInMM: 86,
+	// 		fur: ['orange', 'white'],
+	// 		gender: "male",
+	// 		dateOfBirth: "August 6"
+	// 	}, {
+	// 		name: "Bijou",
+	// 		heightInMM: 75,
+	// 		fur: ['white'],
+	// 		gender: "female",
+	// 		dateOfBirth: "July 10"
+	// 	}, {
+	// 		name: "Oxnard",
+	// 		heightInMM: 100,
+	// 		fur: ['grey', 'white'],
+	// 		gender: "male",
+	// 		dateOfBirth: "May 3"
+	// 	}, {
+	// 		name: "Boss",
+	// 		heightInMM: 120,
+	// 		fur: ['brown', 'white'],
+	// 		gender: "male",
+	// 		dateOfBirth: "September 21"
+	// 	}, {
+	// 		name: "Snoozer",
+	// 		heightInMM: 85,
+	// 		fur: ['brown', 'white', "pink"],
+	// 		gender: "male",
+	// 		dateOfBirth: "January 14"
+	// 	}
+	// ];
 // let results = [];
 //
 // let toSearch = "Boss";
@@ -98,16 +98,16 @@ console.log(getLongestStr(bee))
 
 // WALKTHROUGH
 
-function getTallestHamster(arr) {
-	let tallest = {heightInMM: 0};
-	arr.forEach(function(hamster){
-		if (hamster.heightInMM > tallest.heightInMM){
-			tallest = hamster;
-		}
-	});
-	return tallest
-}
-console.log(getTallestHamster(hamsters));
+// function getTallestHamster(arr) {
+// 	let tallest = {heightInMM: 0};
+// 	arr.forEach(function(hamster){
+// 		if (hamster.heightInMM > tallest.heightInMM){
+// 			tallest = hamster;
+// 		}
+// 	});
+// 	return tallest
+// }
+// console.log(getTallestHamster(hamsters));
 
 //Todo 4 Oct. 31
 
@@ -117,18 +117,58 @@ console.log(getTallestHamster(hamsters));
 // Numbers evenly divisible by both 3 and 5 should be replaced by FizzBuzz
 // All other numbers should be printed in the console.
 
-for (let i = 1; i <= 100; i++){
-	if (i % 3 === 0 && i % 5 === 0) {
-		console.log("FizzBuzz");
-	} else if (i % 3 === 0){
-		console.log("Fizz");
-	} else if ( i % 5 === 0) {
-		console.log("Buzz");
-	} else{
-	console.log(i);
+// for (let i = 1; i <= 100; i++){
+// 	if (i % 3 === 0 && i % 5 === 0) {
+// 		console.log("FizzBuzz");
+// 	} else if (i % 3 === 0){
+// 		console.log("Fizz");
+// 	} else if ( i % 5 === 0) {
+// 		console.log("Buzz");
+// 	} else{
+// 	console.log(i);
+// 	}
+// }
+
+// TODO 5 Nov. 3
+
+//Write a function that takes in an array of objects and returns the average of the heightInMM properties from each object.
+
+const hamsters = [
+	{
+		name: "Hamtaro",
+		heightInMM: 86,
+		fur: ['orange', 'white'],
+		gender: "male",
+		dateOfBirth: "August 6"
+	} , {
+		name: "Bijou",
+		heightInMM: 75,
+		fur: ['white'],
+		gender: "female",
+		dateOfBirth: "July 10"
+	} , {
+		name: "Oxnard",
+		heightInMM: 100,
+		fur: ['grey', 'white'],
+		gender: "male",
+		dateOfBirth: "May 3"
+	} , {
+		name: "Boss",
+		heightInMM: 120,
+		fur: ['brown', 'white'],
+		gender: "male",
+		dateOfBirth: "September 21"
+	} , {
+		name: "Snoozer",
+		heightInMM: 85,
+		fur: ['brown', 'white', "pink"],
+		gender: "male",
+		dateOfBirth: "January 14"
 	}
-}
+];
 
-//Walk
+// getAverageHeight(hamsters); // should return 93.2;
 
+const average = hamsters.reduce((total, next) => total + next.heightInMM, 0) / hamsters.length;
 
+console.log(average);
