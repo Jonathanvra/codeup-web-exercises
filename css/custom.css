@@ -1,0 +1,43 @@
+.btn-outline-success {
+    width: 100%;
+    border-color: #1969B2;
+    color: #1969B2;
+
+}
+.jumbotron {
+    background-image: url("../img/pizza.png");
+    height: 346px;
+    background-size: cover;
+}
+.jumbotron >.bg-light {
+    font-size: 5em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .5) !important
+}
+.badge {
+    margin: .5em;
+
+}
+.badge {
+    color: white;
+    border:#CCCCCC solid 1px;
+    border-radius: 25em;
+    background: white;
+}
+.nav-tabs .nav-link.active, .nav-pills .show {
+    color: #007bff;
+    background-color: #FFFFFF;
+    border: #CCCCCC solid 2px;
+}
+.card {
+    border: #CCCCCC solid .5px;
+    margin: 1em;
+}
+.card-header {
+    background: #CCCCCC;
+}
+.tab-pane {
+
+}
