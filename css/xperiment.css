@@ -1,24 +1,9 @@
-.circle {
-    background: blue;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: solid white 8px;
-    text-align: center;
-    line-height: 85px;
-    font-weight: bold;
-    color: white;
-    margin: 1em;
+table {
+    border-collapse: collapse;
+    margin: 15px 0;
 }
-#des {
-    background: red;
-}
-#dev {
-    background: greenyellow;
-}
-#sup {
-    background: green;
-}
-#host {
-    background: lightseagreen;
+
+td, th {
+    border: 1px solid black;
+    padding: 5px 10px;
 }
