@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Xperiment</title>
+    <style>
+        #foo {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
+<h1 class="foo">Codeup Rocks!</h1>
+<script src="js/jquery.js"></script>
+<script>
+	"use strict";
 
-<script src="js/xperiment.js"></script>
+	$.ajax(document).ready(function() {
+		$('.foo').css('background-color', 'blue');
+	});
+</script>
 </body>
 </html>
