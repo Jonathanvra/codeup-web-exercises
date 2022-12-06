@@ -12,11 +12,8 @@
 
         h1 {
             display: flex;
-            flex-direction: row;
             justify-content: center;
-            margin-top: 1em;
-            margin-left: auto;
-            margin-right: auto;
+            margin: .5em auto;
             font-weight: bold;
             border: 3px solid rgba(60, 63, 65, .5);
             border-radius: 20px;
@@ -24,51 +21,61 @@
             height: 50px;
             background-color: rgba(180, 180, 180, 1)
         }
-
+        h2 {
+            margin-top: 2em;
+            font-weight: bold;
+        }
         #posts {
             background-color: #FFFFFF;
             border: 2px solid rgba(60, 63, 65, .5);
             border-radius: 10px;
             text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            width: 250px;
+            margin-left: 1em;
+            margin-right: 1em;
+            width: auto;
             height: auto;
+        }
+        .c-title {
+            float: right;
+            color: rgb(73, 73, 73);
+            margin-right: .5em;
+        }
+        .date {
+            color: red;
+            float: left;
+            margin-left: .5em;
         }
     </style>
 </head>
 <body>
 <h1>Blog Talk</h1>
 <div id="posts">
-hello <br>
-    goodbye
 </div>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
 </script>
 <script>
-	// (function () {
-	// 	$.ajax("/data/blog.json").done(function (data) {
-    //
-    //
-    //         $('#posts').html
-	// 	});
-	// })();
 	$.ajax({
 		url: "/data/blog.json",
 		type: "GET",
 		dataType: "json",
-	}).done(function(blog){
-		console.log( blog);
-		blog.forEach(function (data){
-			let row = $("<div>");
-			row.append($("<td>").text(data.title));
-			row.append($("<td>").text(data.content));
-			row.append($("<td>").text({data.date}));
-			row.append($("<td>").text(data.categories));
-			$("#insertProducts").append(row);
+	}).done(function (blog) {
+		let info = "";
+		blog.forEach(function (data) {
+			info += "<h2>" + data.title + "</h2>";
+			info += '<p>' + data.content + '</p>';
+			info += '<p class="date">Published on' + data.date + "</p>";
+			// Categories
+			info += "<div class='c-title'>Categories";
+			data.categories.forEach(function (category) {
+
+				info += "<div> " +  category +  " </div>"
+			});
+			info += " </div>";
+			console.log(data);
 		});
+		$("#posts").append(info);
 	});
 </script>
 
