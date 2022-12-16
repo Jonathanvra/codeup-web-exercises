@@ -4,74 +4,81 @@
     <meta charset="UTF-8">
     <title>FAQ</title>
     <style>
-        .invisible{
-        visibility: hidden;
-        }
-        .highlight {
-            background-color: #b4d455;
+        .invisible {
+            visibility: hidden;
         }
 
-        .button1 {
-            background-color: gray;
+        .highlight {
+            background-color: rgb(230, 225, 80);
+        }
+
+        .answersButton {
+            background-color: lightgrey;
             border: solid black 1px;
         }
-        .button2 {
-            background-color: blanchedalmond;
+
+        .highlightButton {
+            background-color: lightgrey;
             border: solid black 1px;
         }
 
         .yellowbackground {
-            background-color: yellow;
+            background-color: rgb(230, 225, 80);
         }
     </style>
 </head>
 <body>
 <h1 class="title">Government Canyon State Natural Area</h1>
-<!--<button onclick="myFunction()">Try it</button>-->
-<div>
-    <dl id="info">
-        <dt>How many areas are in the National Park System?</dt>
-        <dd class="invisible">The system includes 423 areas covering more than 85 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks, monuments, battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation areas, scenic rivers and trails, and the White House.
-        </dd>
+<dl id="info">
+    <dt>How many areas are in the National Park System?</dt>
+    <dd class="invisible">The system includes 423 areas covering more than 85 million acres in every state, the District
+        of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks,
+        monuments, battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation
+        areas, scenic rivers and trails, and the White House.
+    </dd>
 
-        <dt>How many people visit the national parks?</dt>
-        <dd class="invisible">Total recreation visitors to the national parks in 2021: 297,115,406.
-        </dd>
+    <dt>How many people visit the national parks?</dt>
+    <dd class="invisible">Total recreation visitors to the national parks in 2021: 297,115,406.
+    </dd>
 
-        <dt>What is the most-visited national park?</dt>
-        <dd class="invisible">Blue Ridge Parkway at 15.9 Million visitors.
-        </dd>
+    <dt>What is the most-visited national park?</dt>
+    <dd class="invisible">Blue Ridge Parkway at 15.9 Million visitors.
+    </dd>
 
-        <dt>What is the largest national park site?</dt>
-        <dd class="invisible">Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres.
-        </dd>
+    <dt>What is the largest national park site?</dt>
+    <dd class="invisible">Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres.
+    </dd>
 
-        <dt></dt>What is the smallest national park site?
-        <dd class="invisible">Thaddeus Kosciuszko National Memorial, PA, at 0.02 acres.
-        </dd>
+    <dt></dt>
+    What is the smallest national park site?
+    <dd class="invisible">Thaddeus Kosciuszko National Memorial, PA, at 0.02 acres.
+    </dd>
 
-        <dt>Can I bring my pet to a national park?</dt>
-        <dd class="invisible">Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities.
-        </dd>
+    <dt>Can I bring my pet to a national park?</dt>
+    <dd class="invisible">Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in
+        some lodging facilities.
+    </dd>
 
-        <dt>How old is the National Park System?</dt>
-        <dd class="invisible">The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916. Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1, 1872, as the nation's first national park.
-        </dd>
+    <dt>How old is the National Park System?</dt>
+    <dd class="invisible">The National Park Service was created by an act signed by President Woodrow Wilson on August
+        25, 1916. Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1,
+        1872, as the nation's first national park.
+    </dd>
 
-        <dt>Who is the director of the National Park Service?</dt>
-        <dd class="invisible">Charles F. "Chuck" Sams III is the Director of the National Park Service.
-        </dd>
+    <dt>Who is the director of the National Park Service?</dt>
+    <dd class="invisible">Charles F. "Chuck" Sams III is the Director of the National Park Service.
+    </dd>
 
-        <dt>What government agency oversees the National Park Service?</dt>
-        <dd class="invisible">The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.
-        </dd>
+    <dt>What government agency oversees the National Park Service?</dt>
+    <dd class="invisible">The National Park Service is a bureau of the Department of the Interior. Directly overseeing
+        its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.
+    </dd>
 
-        <dt>What year has had the most recreational visitors?</dt>
-        <dd class="invisible">The year with the most National park visitors is 2016 with 330,971,689 visitors.
-        </dd>
-    </dl>
-</div>
-<button class="button1">Click Here to show answers!</button>
+    <dt>What year has had the most recreational visitors?</dt>
+    <dd class="invisible">The year with the most National park visitors is 2016 with 330,971,689 visitors.
+    </dd>
+</dl>
+<button class="answersButton">Click Here to show answers!</button>
 <h3>Guadalupe Mountains</h3>
 <ul>
     <li>Guadalupe Mountains covers a total area of 86,416 acres or 135 square miles.
@@ -105,30 +112,28 @@
     <li>The highest point in Mesa Verde is 8,571 feet at Park Point.
     </li>
 </ul>
-<button class="button2">Click to Highlight last fact!</button>
+<button class="highlightButton">Click to Highlight last fact!</button>
 <script>
-	$(".button1").click(function () {
+
+	$(".answersButton").click(function () {
 		$('dd').toggleClass("invisible")
 	});
-
 	$("dt").click(function () {
 		$(this).toggleClass("highlight")
 	});
-	$(".button2").click(function () {
-		$('ul').each(function() {
+	$(".highlightButton").click(function () {
+		$('ul').each(function () {
 			$(this).children().last().toggleClass('yellowbackground');
 		})
 	});
-
 	$("h3").click(function () {
 		$(this).next().css('font-weight', 'bold');
 	});
-
 	$("li").click(function () {
 		$(this).parent().children().first().css('color', 'blue');
 	});
 </script>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </body>
 </html>
